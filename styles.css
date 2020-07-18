@@ -44,7 +44,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     right: -4px;
     box-sizing: border-box;
     animation: bottom-left 3s forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.7s;
   }
 
   @keyframes top-right {
