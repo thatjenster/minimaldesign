@@ -16,15 +16,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 #box-drawing {
-    position: relative;
-    box-sizing: border-box;
-    width: 350px;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 350px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 #box-drawing::after {
@@ -34,7 +33,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     left: -4px;
     box-sizing: border-box;
     animation: top-right 3s forwards;
-    animation-delay: 1.8s;
+    animation-delay: 3.6s;
 }
 
 #box-drawing::before {
@@ -44,7 +43,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     right: -4px;
     box-sizing: border-box;
     animation: bottom-left 3s forwards;
-    animation-delay: 1.7s;
+    animation-delay: 3.5s;
   }
 
   @keyframes top-right {
@@ -106,12 +105,37 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
   }
 
-.group {
-  opacity: 0;
-  transform: translateX(-25px);
+.minimal {
+  width: 300px;
+  height: 80px;
+}
+.popup {
   animation: bi-animation 900ms;
-  animation-delay: 1s;
   animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-a {
+  animation-delay: 1s;
+}
+.animation-b {
+  animation-delay: 1.5s;
+}
+.animation-c {
+  animation-delay: 2s;
+}
+.animation-d {
+  animation-delay: 2.5s;
+}
+
+.animation-e {
+  animation-delay: 0.5s;
+}
+.animation-f {
+  animation-delay: 3s;
+}
+.animation-g {
+  animation-delay: 3.5s;
 }
 
 @keyframes bi-animation {
