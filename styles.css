@@ -9,13 +9,17 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-.loader {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+body {
+  margin: 0 auto;
+}
+.box-container {
+  margin: 0 10px;
+  position: fixed;
+  top: 50%;
+  left: 38%;
 }
 
-#box-drawing {
+/* #box-drawing {
   width: 350px;
   text-align: center;
   margin: 0;
@@ -103,11 +107,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
       border-bottom: 1.5px solid black;
       border-left: 1.5px solid black;
     }
-  }
-
+  } */
 .minimal {
   width: 300px;
-  height: 80px;
+  height: 100px;
 }
 .popup {
   animation: bi-animation 900ms;
